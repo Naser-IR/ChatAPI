@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WhatsApp_Android</string>
+    <string name="login_username">UserName</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register">register</string>
+    <string name="chats">Chats</string>
+    <string name="ProfileSettings">profilesettings</string>
+    <string name="Profile_Settings">profilesttings</string>
+    <string name="Profilesettings">Profile Settings</string>
+    <string name="select_image">Select Image</string>
+    <string name="dark">false</string>
+    <string name="BaseUrl">http://10.0.2.2:7000/api/</string>
+    <string name="already_registered_login">Already registered?, Login</string>
+</resources>

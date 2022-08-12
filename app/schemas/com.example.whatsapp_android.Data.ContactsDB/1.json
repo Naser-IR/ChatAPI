@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "53387503532d071e759d2b54846b65fd",
+    "entities": [
+      {
+        "tableName": "Contact",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`contName` TEXT NOT NULL, `name` TEXT, `userId` TEXT, `server` TEXT, PRIMARY KEY(`contName`))",
+        "fields": [
+          {
+            "fieldPath": "contName",
+            "columnName": "contName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "server",
+            "columnName": "server",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "contName"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '53387503532d071e759d2b54846b65fd')"
+    ]
+  }
+}

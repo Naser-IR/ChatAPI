@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/reciever_background"
+        android:id="@+id/messageLayout2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender Message Display Here "
+            android:textSize="20sp"
+            android:textColor="?attr/text_color"
+            android:paddingStart="7dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:id="@+id/MessageItem">
+        </TextView>
+
+        <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/MessageItem"
+            android:layout_marginStart="-40dp"
+            android:layout_toEndOf="@id/MessageItem"
+            android:padding="5dp"
+            android:text="20:09"
+            android:textColor="?attr/text_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>
