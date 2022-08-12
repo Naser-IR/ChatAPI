@@ -13,3 +13,4 @@ also there was given a bonus mission to run our server on the university servers
 https://mega.nz/file/7lEhhACJ#woQ7aw9ed9ugqDBP6tFMaOC0wtmcLqHGEKOUZBtTGwU
 
 in short you can follow all the instructions explaiend in the videos and you well be able to run the app with no problems. 
+Project was done in groups
