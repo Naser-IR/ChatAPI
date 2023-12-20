@@ -1,4 +1,5 @@
 # Chat_APIServer
+# i did this project with a friend here is the link : https://github.com/NaserDawod/Chat_APIServer
 
 Server for a chat app, the server is built with C# in ASP.Net core MVC shuch that the design of the web page is in the View, the logic in the Controller and data in the Model, also the server dose implemnt a API service that the view can use to get and put data in the database, the implemntaion of the API it self is via a built in Service and for the DataBase im using Microsoft EntityFramework </br>
 
