@@ -1,16 +1,32 @@
-# WhatsApp_Android
-an simple andriod app for messaging between diffrent users with real time messages
+Server for a chat app, the server is built with C# in ASP.Net core MVC shuch that the design of the web page is in the View, the logic in the Controller and data in the Model, also the server dose implemnt a API service that the view can use to get and put data in the database, the implemntaion of the API it self is via a built in Service and for the DataBase im using Microsoft EntityFramework
 
-of course first you need to clone or download the app and then open it via the android studio, and then follow the given instructions:
+I built this server with both my partners Hiba and Nsr for a group project for my algorithmic programing class
 
-in order to run the android app with the server we created in the last assignment you need to go the the new repository: https://github.com/NaserDawod/Web-And-APIServer
-download the server and run both the server and android on the same time
-the instructions for runing the server are in the server repository above and also for your comfort i made a video of how to run the server and the android app in the same time to check the project in a proper way in great details that goes for all the requested things in the assignment.
-link: 
-https://mega.nz/file/WxtlQJZC#Z17dLpbwxZnI2xsb2JQLNWOp_5X361lMUD_DEomJtqU
+the web site offers the ability to create accounts and add different contacts(even contacts from different servers with the same API) and most important Real Time messages! (thanks to SignalR).
+and to mention that we also built a android app that uses the same server
 
-also there was given a bonus mission to run our server on the university servers and work with it so we did this, as you have sayed we made a video of our server working on the university servers here is the link:   
-https://mega.nz/file/7lEhhACJ#woQ7aw9ed9ugqDBP6tFMaOC0wtmcLqHGEKOUZBtTGwU
+running the server is simple:
+ Linux:
+  1- download or clone the repository
+  2- opne the terminal from the project folder
+  3- type: dotnet ef update database
+  4- type: dotnet run
+ Windows:
+  1- download or clone the repository
+  2- opne the cmd from the project folder
+  3- type: Update-DataBase
+  4- type: dotnet run
+here is a short video of how to run the server and creat a new account: https://mega.nz/file/y1tnmaIa#KhXe4UQlz7Ao3k0balvJxFvFROD6CdZ_Rzm3JMQdd4w
+the server localhost is : localhost:7000
 
-in short you can follow all the instructions explaiend in the videos and you well be able to run the app with no problems. 
-Project was done in groups
+now after you run the app you can creat an account via the register page then login and start using the app as normal you can add contacts via the add button next to tha name, edit the contact, delete him and you can send, edit, delete messages a huge part was to check the api but since you didnt specify the way that you will check it here are tow ways that you can check that it is working
+
+1- you can use the cilent side site after loging into your account the app supports all the abilities working with contacts messages and real time messages to different servers
+
+here is an example of using the cient side site https://mega.nz/file/ftVmSbAQ#y61nbn_SVls-ohzJcG_SitAW95Yl81SGJwHHW13_CXw
+
+2- you can use any api service that are online to check the server and since you need to authorize the user that is logged in we have put the token that was created with the jwt on the url after your loging in so you can take in then use it as you want here is an example of using the api https://mega.nz/file/2tVWkZII#Hsgjz9Y2K-aKoi2C47J9auEvpZ1YohQZDVRXaX-WjlM
+
+Note: in the previos assignment we were 2 in the group and we didnt use react so we had to move our frontend from the previos assignment and use it here
+
+code structure: first is the signin were we have a signcontroller wich use the jwt authintication method after loging in you will be moved to the chat section along with the authorize token from the jwt the chat page is controlled by the chat controller and the contacts api wich in turn use the UserService to read and wtite data from the site and we use the SignalR method for sending notifications.
