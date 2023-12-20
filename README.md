@@ -1,22 +1,24 @@
-Server for a chat app, the server is built with C# in ASP.Net core MVC shuch that the design of the web page is in the View, the logic in the Controller and data in the Model, also the server dose implemnt a API service that the view can use to get and put data in the database, the implemntaion of the API it self is via a built in Service and for the DataBase im using Microsoft EntityFramework
+# Chat_APIServer
+
+Server for a chat app, the server is built with C# in ASP.Net core MVC shuch that the design of the web page is in the View, the logic in the Controller and data in the Model, also the server dose implemnt a API service that the view can use to get and put data in the database, the implemntaion of the API it self is via a built in Service and for the DataBase im using Microsoft EntityFramework </br>
 
 I built this server with both my partners Hiba and Nsr for a group project for my algorithmic programing class
 
-the web site offers the ability to create accounts and add different contacts(even contacts from different servers with the same API) and most important Real Time messages! (thanks to SignalR).
-and to mention that we also built a android app that uses the same server
+the web site offers the ability to create accounts and add different contacts(even contacts from different servers with the same API) and most important Real Time messages! (thanks to SignalR).</br>
+and to mention that we also built a android app that uses the same server</br>
 
-running the server is simple:
- Linux:
-  1- download or clone the repository
-  2- opne the terminal from the project folder
-  3- type: dotnet ef update database
-  4- type: dotnet run
- Windows:
-  1- download or clone the repository
-  2- opne the cmd from the project folder
-  3- type: Update-DataBase
-  4- type: dotnet run
-here is a short video of how to run the server and creat a new account: https://mega.nz/file/y1tnmaIa#KhXe4UQlz7Ao3k0balvJxFvFROD6CdZ_Rzm3JMQdd4w
+running the server is simple:</br>
+&emsp;Linux:</br>
+&emsp;&emsp;1- download or clone the repository</br>
+&emsp;&emsp;2- opne the terminal from the project folder</br>
+&emsp;&emsp;3- type: dotnet ef update database</br>
+&emsp;&emsp;4- type: dotnet run</br>
+&emsp;Windows:</br>
+&emsp;&emsp;1- download or clone the repository</br>
+&emsp;&emsp;2- opne the cmd from the project folder</br>
+&emsp;&emsp;3- type: Update-DataBase</br>
+&emsp;&emsp;4- type: dotnet run</br>
+here is a short video of how to run the server and creat a new account: https://mega.nz/file/y1tnmaIa#KhXe4UQlz7Ao3k0balvJxFvFROD6CdZ_Rzm3JMQdd4w </br>
 the server localhost is : localhost:7000
 
 now after you run the app you can creat an account via the register page then login and start using the app as normal you can add contacts via the add button next to tha name, edit the contact, delete him and you can send, edit, delete messages a huge part was to check the api but since you didnt specify the way that you will check it here are tow ways that you can check that it is working
